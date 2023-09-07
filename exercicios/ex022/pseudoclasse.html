@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+
+        /*
+            #    = id
+            .    = class
+            :    = psedo-classe
+            ::   = pseudo-elemento
+            >    = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(250, 140, 140);
+        }
+
+        .especial::after {
+            content: '»';
+        }
+
+        .especial::before {
+            content: '«';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="http://google.com" target="_blank" rel="external">Google</a></li>
+        <li><a href="http://youtube.com" target="_blank" rel="external">Youtube</a></li>
+        <li><a href="http://cursoemvideo.com" target="_blank" rel="external" class="especial">Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
