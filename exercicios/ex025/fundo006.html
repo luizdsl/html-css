@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+</head>
+<style>
+    body {
+        /*height: 97vh;
+        background-color: black;
+        background-image: url(imagens/wallpaper002.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;*/
+       
+        /*background-size: contain;*/ /*Dimensiona a imagem o maior possível dentro de seu contêiner, sem cortar ou esticar a imagem.*/
+        /*background-size: 100% 100%;*/ /*A imagem cobrirá toda a viewport tanto em altura quanto em largura. Porém essa solução deforma a imagem.*/
+        /*background-attachment: fixed;*/ /*scroll: o fundo rola junto com o conteúdo*/
+
+        /*shorthand:
+        color image position repeat [size, no momento não funciona] attachment*/
+        background: black url(imagens/wallpaper002.jpg) center center no-repeat local;
+        background-size: cover; /*Dimensiona a imagem (preservando sua proporção) para o menor tamanho possível para preencher o contêiner (ou seja: tanto a altura quanto a largura cobrem completamente o contêiner), não deixando nenhum espaço vazio.*/ /*O background-size tem que ficar perto do shorthand*/
+    }
+    
+    main {
+        background-color: white;
+        max-width: 400px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid darkblue;
+        border-radius: 15px;
+    }
+</style>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptate sed officia velit veniam ea excepturi reiciendis adipisci molestias rerum, qui sint similique obcaecati repudiandae corrupti corporis asperiores animi quis?</p>
+    </main>
+</body>
+</html>
